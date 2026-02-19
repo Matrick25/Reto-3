@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrick - Planes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-text">MATRICK</span>
+                </a>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="aplicacion.html" class="nav-link">Aplicación</a></li>
+                    <li><a href="planes.html" class="nav-link active">Planes</a></li>
+                    <li><a href="sobre-nosotros.html" class="nav-link">Sobre Nosotros</a></li>
+                    <li><a href="cuenta.html" class="nav-link btn-cuenta">Cuenta</a></li>
+                </ul>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-hero-title">Planes y Precios</h1>
+            <p class="page-hero-subtitle">Elige el plan que mejor se adapte a tu equipo. Comparación clara de características y precios.</p>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Comparativa de Suscripciones</h2>
+                <p class="section-subtitle">Con la misma estética y claridad para decidir fácilmente.</p>
+            </div>
+
+            <div class="comparison">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Características</th>
+                            <th>Básico</th>
+                            <th>Pro</th>
+                            <th>Empresa</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Precio / mes</td>
+                            <td><strong>$0</strong></td>
+                            <td><strong>$19</strong></td>
+                            <td><strong>$99</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Usuarios</td>
+                            <td>1</td>
+                            <td>hasta 10</td>
+                            <td>ilimitado</td>
+                        </tr>
+                        <tr>
+                            <td>Almacenamiento</td>
+                            <td>5 GB</td>
+                            <td>100 GB</td>
+                            <td>1 TB</td>
+                        </tr>
+                        <tr>
+                            <td>Integraciones</td>
+                            <td>Limitadas</td>
+                            <td>Incluidas</td>
+                            <td>Incluidas + Soporte dedicado</td>
+                        </tr>
+                        <tr>
+                            <td>Soporte</td>
+                            <td>No</td>
+                            <td>Email</td>
+                            <td>Prioritario 24/7</td>
+                        </tr>
+                        <tr>
+                            <td>Analytics</td>
+                            <td>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                            </td>
+                            <td>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                            </td>
+                            <td>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>SLA</td>
+                            <td>N/A</td>
+                            <td>99.9%</td>
+                            <td>99.99%</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="comparison-cta">
+                    <a href="cuenta.html" class="btn btn-primary">Comenzar con el plan que quieras</a>
+                </div>
+            </div>
+            <br><br><br><br><br>
+
+            <!-- Pricing Cards -->
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3 class="pricing-title">Básico</h3>
+                    <div class="pricing-price">
+                        <span class="price-currency">$</span>
+                        <span class="price-amount">0</span>
+                        <span class="price-period">/mes</span>
+                    </div>
+                    <p class="pricing-description">Perfecto para probar y proyectos personales.</p>
+                    <ul class="pricing-features">
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> 1 usuario</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> 5 GB almacenamiento</li>
+                        <li class="disabled"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Integraciones limitadas</li>
+                    </ul>
+                    <a href="cuenta.html" class="btn btn-outline-dark">Comenzar</a>
+                </div>
+
+                <div class="pricing-card pricing-featured">
+                    <div class="pricing-badge">Más Popular</div>
+                    <h3 class="pricing-title">Pro</h3>
+                    <div class="pricing-price">
+                        <span class="price-currency">$</span>
+                        <span class="price-amount">19</span>
+                        <span class="price-period">/mes</span>
+                    </div>
+                    <p class="pricing-description">Ideal para equipos pequeños y crecimiento.</p>
+                    <ul class="pricing-features">
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Hasta 10 usuarios</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> 100 GB almacenamiento</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Integraciones</li>
+                    </ul>
+                    <a href="cuenta.html" class="btn btn-primary">Comenzar</a>
+                </div>
+
+                <div class="pricing-card">
+                    <h3 class="pricing-title">Empresa</h3>
+                    <div class="pricing-price">
+                        <span class="price-currency">$</span>
+                        <span class="price-amount">99</span>
+                        <span class="price-period">/mes</span>
+                    </div>
+                    <p class="pricing-description">Soporte dedicado y opciones a medida.</p>
+                    <ul class="pricing-features">
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Usuarios ilimitados</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> 1 TB almacenamiento</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> SLA y soporte 24/7</li>
+                    </ul>
+                    <a href="cuenta.html" class="btn btn-outline-dark">Contactar</a>
+                </div>
+            </div>
+
+            <div style="margin-top: 2rem; text-align:center; color:var(--text-secondary);">
+                <p>Si necesitas una cotización personalizada para tu empresa, <a href="#">contáctanos</a> y te ayudamos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">¿Listo para elegir?</h2>
+                <p class="cta-description">Empieza gratis o contacta a nuestro equipo para planes empresariales.</p>
+                <div class="cta-buttons">
+                    <a href="cuenta.html" class="btn btn-primary">Crear Cuenta</a>
+                    <a href="#" class="btn btn-outline">Contactar Ventas</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">MATRICK</h3>
+                    <p class="footer-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Producto</h4>
+                    <ul class="footer-links">
+                        <li><a href="aplicacion.html">Aplicación</a></li>
+                        <li><a href="#">Características</a></li>
+                        <li><a href="#">Precios</a></li>
+                        <li><a href="#">API</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Empresa</h4>
+                    <ul class="footer-links">
+                        <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Carreras</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacidad</a></li>
+                        <li><a href="#">Términos</a></li>
+                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">Licencias</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Matrick. Todos los derechos reservados.</p>
+                <div class="footer-social">
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="#" class="social-link">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

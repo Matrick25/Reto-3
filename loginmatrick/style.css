@@ -1,0 +1,103 @@
+/* Animación de fondo líquido con variaciones de #c581ff */
+@keyframes liquid-motion {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  /* Mezcla de tonos claros y oscuros basados en #c581ff */
+  background: linear-gradient(-45deg, #c581ff, #8e44ad, #f3e5f5, #2c003e);
+  background-size: 400% 400%;
+  animation: liquid-motion 12s ease infinite;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.form {
+  width: 360px;
+  padding: 50px 40px;
+  /* Efecto Liquid Glass */
+  background: rgba(255, 255, 255, 0.1); /* Tono claro semi-transparente */
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  
+  border-radius: 30px;
+  /* Borde sutil para definir el cristal */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  /* Sombra oscura profunda para dar relieve */
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  color: #ffffff;
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  /* Brillo suave en el texto */
+  text-shadow: 0 0 10px rgba(197, 129, 255, 0.8);
+}
+
+.input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 15px;
+  /* Tono oscuro para los inputs */
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.4s;
+  box-sizing: border-box; /* Asegura que el padding no rompa el ancho */
+}
+
+.input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.input:focus {
+  background: rgba(0, 0, 0, 0.4);
+  border-color: #c581ff;
+  box-shadow: 0 0 15px rgba(197, 129, 255, 0.3);
+}
+
+.btn {
+  width: 100%;
+  padding: 15px;
+  margin-top: 10px;
+  /* Color principal #c581ff con contraste oscuro */
+  background: #c581ff;
+  color: #2c003e;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+  background: #ffffff;
+  color: #c581ff;
+  transform: translateY(-3px);
+  box-shadow: 0 15px 25px rgba(197, 129, 255, 0.4);
+}
